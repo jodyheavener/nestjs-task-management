@@ -1,2 +1,6 @@
 db:
   synchronize: false
+
+server:
+  # TODO: replace this when you set up frontend
+  origin: 'S3_BUCKET_URL'
