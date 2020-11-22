@@ -15,11 +15,11 @@
     "start:dev": "nest start --watch",
     "start:prod": "NODE_ENV=production node dist/main",
     "start": "nest start",
-    "test:cov": "jest --coverage",
+    "test:cov": "yarn test --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json",
-    "test:watch": "jest --watch",
-    "test": "jest"
+    "test:e2e": "yarn test --config ./test/jest-e2e.json",
+    "test:watch": "yarn test --watch",
+    "test": "NODE_ENV=development jest"
   },
   "dependencies": {
     "@nestjs/common": "^7.5.1",
